@@ -8,5 +8,5 @@
         <li>Account: <strong>giangphan</strong></li>
         <li>Password: <strong>giang</strong></li>
     </ul>
-    <i>Please import all of table of database from <b>db</b> folder and config <b>connect.php<b> to connect to your database. Now, just injoy it. Thanks!</i>
+    <i>Please import all of table of database from <b>db</b> folder and config <b>connect.php</b> to connect to your database. Now, just injoy it. Thanks!</i>
 </quote>
