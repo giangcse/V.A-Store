@@ -6,7 +6,7 @@
     Administrator site: <a href="http://shop.giangcse.site/admin/">admin</a>
     <ul>
         <li>Account: <strong>giangphan</strong></li>
-        <li>Password: <a href="" class="password" onclick="show();">******</a></li>
+        <li>Password: <a class="password" onclick="show();">******</a></li>
     </ul>
     <i>Please import all of table of database from <b>db</b> folder and config <b>connect.php</b> to connect to your database. Now, just enjoy it. Thanks!</i>
     <script>
