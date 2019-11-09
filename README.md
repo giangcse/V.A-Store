@@ -9,4 +9,5 @@
         <li>Password: <strong>giang</strong></li>
     </ul>
     <i>Please import all of table of database from <b>db</b> folder and config <b>connect.php</b> to connect to your database. Now, just enjoy it. Thanks!</i>
+    <img src="https://i.imgur.com/PxSteSo.png">
 </quote>
