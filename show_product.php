@@ -17,6 +17,15 @@
 ?>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/plus_minus.css">
+<style type="text/css">
+      .card-img-top{
+        padding-top: 10px;
+      }
+      .card-img-top:hover{
+        transition: 0.2s;
+        transform: translateY(-10px);
+      }
+</style>
 <div class="col-md-3">
   <a data-toggle="modal" data-target="#<?php echo $row['MSHH']; ?>" class="custom-card">
   <div class="card mb-4 shadow-sm" style="display: inline-block">
