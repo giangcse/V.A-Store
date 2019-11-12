@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Lazy load image -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <script
+    src="https://kit.fontawesome.com/0e6673a1b2.js"
+    crossorigin="anonymous"
+    ></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,13 +21,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" />
-
-    <style type="text/css">
-      a.custom-card,
-      a.custom-card:hover {
-        color: inherit;
-      }
-    </style>
     <title>V.A Store | PC - Laptop - Gaming gear</title>
   </head>
   <body>
@@ -72,17 +68,19 @@
                     while($row = mysqli_fetch_assoc($username_query))
                         $fullname = $row['HoTenKH'];
                 }
-            echo '
+            ?>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  '.$fullname.'
+                  <?php echo $fullname; ?>
                   </a>
                   <div class="dropdown-menu">
-                  <a class="dropdown-item" href="" id="myBtn" data-toggle="modal" data-target="#paymentModal">Giỏ hàng</a>
-                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="logout.php">Đăng xuất</a>
                   </div>
-                </li>';
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link" id="myBtn" data-toggle="modal" data-target="#paymentModal"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+                <?php
             }else
               echo '<li class="nav-item">
               <a class="nav-link"  data-toggle="modal" data-target="#myModal">Đăng kí</a>
