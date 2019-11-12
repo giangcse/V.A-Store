@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 12, 2019 at 06:24 AM
+-- Generation Time: Nov 12, 2019 at 02:41 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -41,8 +41,7 @@ CREATE TABLE `chitietdathang` (
 
 INSERT INTO `chitietdathang` (`SoDonHH`, `MSHH`, `SoLuong`, `GiaDatHang`) VALUES
 ('0', 'GM1', 1, 87989000),
-('1', 'PC4', 2, 98098000),
-('2', 'PC5', 12, 178596000);
+('1', 'PC4', 2, 98098000);
 
 -- --------------------------------------------------------
 
@@ -64,8 +63,7 @@ CREATE TABLE `dathang` (
 
 INSERT INTO `dathang` (`SoDonDH`, `MSKH`, `MSNV`, `NgayDH`, `TrangThai`) VALUES
 ('0', '1', '0', '2019-11-02 21:18:14', 'cancelled'),
-('1', '1', '0', '2019-11-06 07:32:15', 'pending'),
-('2', '1', '0', '2019-11-06 07:35:15', 'processed');
+('1', '1', '0', '2019-11-06 07:32:15', 'pending');
 
 -- --------------------------------------------------------
 
@@ -242,8 +240,8 @@ ALTER TABLE `nhomhanghoa`
 -- Constraints for table `chitietdathang`
 --
 ALTER TABLE `chitietdathang`
-  ADD CONSTRAINT `chitietdathang_ibfk_2` FOREIGN KEY (`SoDonHH`) REFERENCES `dathang` (`SoDonDH`) ON DELETE NO ACTION ON UPDATE CASCADE,
-  ADD CONSTRAINT `chitietdathang_ibfk_3` FOREIGN KEY (`MSHH`) REFERENCES `hanghoa` (`MSHH`) ON DELETE NO ACTION ON UPDATE CASCADE;
+  ADD CONSTRAINT `chitietdathang_ibfk_3` FOREIGN KEY (`MSHH`) REFERENCES `hanghoa` (`MSHH`) ON DELETE NO ACTION ON UPDATE CASCADE,
+  ADD CONSTRAINT `chitietdathang_ibfk_4` FOREIGN KEY (`SoDonHH`) REFERENCES `dathang` (`SoDonDH`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
 -- Constraints for table `dathang`
